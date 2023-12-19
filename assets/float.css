@@ -1,0 +1,71 @@
+body {
+  font-family: 'Lucida sans';
+}
+
+header {
+  background-color: navy;
+  padding: 1em 0;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  /* ripristino il normale flow della pagina */
+  clear: left; /* left perchè il float era a left */
+}
+
+footer p {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+#main-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  color: white;
+}
+
+aside#left {
+  text-align: center;
+  margin-top: 1em;
+}
+
+aside#right {
+  text-align: center;
+}
+
+/* VISUALIZZAZIONE TABLET+ */
+/* questo stile deve applicarsi solamente dai 768px in su */
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main-menu li {
+    display: inline;
+    margin: 0 0.5em;
+  }
+
+  aside#left {
+    float: left;
+  }
+
+  aside#right {
+    float: right;
+  }
+
+  aside img {
+    margin-right: 1em;
+  }
+}

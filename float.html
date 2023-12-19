@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proprietà FLOAT</title>
+    <link rel="stylesheet" href="./assets/float.css" />
+  </head>
+  <body>
+    <header>
+      <!-- "float" è una proprietà CSS piuttosto antica, parte dell'era pre-flex (CSS2)
+        la principale caratteristica di questa proprietà è la capacità di AFFIANCARE dei contenuti:
+        si assegna la proprietà "float: left" oppure "float:right" ad un elemento, e quell'elemento
+        si posizionerà automaticamente all'estremo selezionato (all'interno del contenitore). Il resto
+        del contenuto (i tag successivi) vengono -automaticamente- posizionati sul lato libero. -->
+      <h1>EPICODE</h1>
+      <nav>
+        <ul id="main-menu">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>ANGULAR</li>
+          <li>REACT</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside id="left">
+        <img src="https://placedog.net/300" alt="doggo" />
+      </aside>
+
+      <aside id="right">
+        <img src="https://placedog.net/300" alt="doggo" />
+      </aside>
+
+      <!-- gli elementi a cui applicate float nell'HTML vanno inseriti PRIMA degli elementi a cui
+        -non- applicherete float (gli elementi che volete far confluire nello spazio libero) -->
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam
+          reiciendis quo, ad placeat ipsam ea pariatur? Velit modi, voluptatibus
+          illo consequuntur natus eligendi dolor, dolores itaque ducimus earum
+          excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni numquam reiciendis quo, ad placeat ipsam ea pariatur? Velit
+          modi, voluptatibus illo consequuntur natus eligendi dolor, dolores
+          itaque ducimus earum excepturi.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>EPICODE - <span id="year"></span></p>
+    </footer>
+    <script>
+      const yearSpan = document.getElementById('year')
+      yearSpan.innerText = new Date().getFullYear()
+    </script>
+  </body>
+</html>
