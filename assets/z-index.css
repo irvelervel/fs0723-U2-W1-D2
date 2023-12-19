@@ -1,0 +1,32 @@
+#box {
+  width: 350px;
+  height: 350px;
+  border: 2px solid black;
+  margin: 100px auto 0 auto;
+  position: relative;
+}
+
+div > div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+#red {
+  background-color: red;
+  z-index: 30000000;
+}
+
+#blue {
+  background-color: blue;
+  left: 50px;
+  top: 50px;
+  z-index: 29999999;
+}
+
+#green {
+  background-color: green;
+  left: 150px;
+  top: 150px;
+  z-index: 1;
+}

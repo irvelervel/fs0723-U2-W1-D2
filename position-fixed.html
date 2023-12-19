@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: fixed</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .fixed {
+        position: fixed;
+        /* se avessi messo absolute, visivamente all'avvio il risultato sarebbe stato lo stesso
+        ma avrei potuto "scrollare via" la sezione azzurra, invece con fixed rimane sempre visibile */
+        bottom: 0px;
+        /* right: 10px; */
+        background-color: aqua;
+        width: 100%;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: FIXED</h2>
+      <p>
+        Un elemento posizionato con position: fixed prende come riferimento il
+        viewport del browser, l'area di visualizzazione; questo significa che il
+        posizionamento dell'elemento NON DIPENDERÀ dalla posizione del
+        documento, l'utente potrà scrollare o navigare nella pagina ma
+        l'elemento con fixed rimarrà sempre ancorato in quella posizione della
+        finestra. Useremo sempre le proprietà top/bottom/left/right per
+        posizionare l'elemento.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sed vero
+        eum blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati. Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Iste sed vero eum
+        blanditiis unde quas iusto sit ratione culpa, aperiam inventore cum
+        neque, sunt, debitis reprehenderit esse ab id. Obcaecati.
+      </p>
+      <div class="fixed">Questo div è posizionato con position: fixed</div>
+    </main>
+  </body>
+</html>
