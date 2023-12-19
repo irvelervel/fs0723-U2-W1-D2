@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: absolute</title>
+    <style>
+      .absolute {
+        position: absolute;
+        top: 50px;
+      }
+
+      #container {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(248, 248, 126);
+        margin-left: 200px;
+        border: 2px solid gold;
+        border-radius: 20px;
+      }
+
+      /* normalmente, position: absolute prende come riferimento i bordi della pagina, A MENO CHE non ci sia
+      tra i suoi contenitore un elemento dotato di position: relative! In quel caso, l'elemento in absolute
+      prenderà LUI come riferimento per top/bottom/left/right, e NON PIÙ i bordi della pagina */
+
+      #container {
+        position: relative;
+      }
+
+      #container div {
+        /* div novità */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: ABSOLUTE</h2>
+      <p>
+        Un elemento con position: absolute viene -completamente rimosso- dal
+        flusso naturale degli elementi nella pagina. Un po' come position:
+        relative, l'elemento può posizionato tramite le quattro proprietà top,
+        bottom, left e right; quello che cambia sono i suoi riferimenti: se con
+        position: relative l'elemento veniva spostato dalla sua posizione
+        "naturale", indicando un valore di top, bottom, left e right con
+        position: absolute noi andiamo a prendere come riferimento i quattro
+        lati della finestra.
+      </p>
+      <p class="absolute">Questo div è posizionato con position: absolute</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        sapiente cupiditate quae tempora corporis dolor quo optio in,
+        necessitatibus libero aliquam commodi. Quisquam impedit voluptate itaque
+        quo necessitatibus eaque fugit!
+      </p>
+      <div id="container">
+        <div>NOVITÀ</div>
+      </div>
+    </main>
+  </body>
+</html>

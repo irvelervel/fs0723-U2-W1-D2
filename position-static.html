@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: static</title>
+    <style>
+      .static {
+        position: static; /* sarebbe in ogni caso il valore di default */
+        border: 2px solid red;
+        left: 100px;
+        /* questo left in realtà NON sta funzionando, perchè non ha valore su un position: static :( */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: STATIC</h2>
+      <p>
+        Il valore "static" di position è anche il valore di default. Un elemento
+        dotato di position: static non è posizionato nella pagina in alcun modo
+        speciale, seguirà sempre il normale flow degli elementi. Può essere
+        necessario impostarlo a mano quando un elemento eredita questa proprietà
+        da un contenitore oppure quando è necessario differenziarne il valore in
+        una media query.
+      </p>
+      <div class="static">Questo div è posizionato con position: static</div>
+    </main>
+  </body>
+</html>

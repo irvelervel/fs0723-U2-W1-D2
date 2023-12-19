@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: relative</title>
+    <style>
+      div {
+        /* position: static; */ /* il secondo div non ha nessuna proprietà di posizionamento */
+        border: 2px solid black;
+      }
+
+      .relative {
+        position: relative;
+        border: 2px solid red;
+        margin-bottom: 1em;
+        left: 30px;
+        top: 50px;
+        /* top, bottom, left e right funzionano solo su un position che NON È STATIC!! */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: RELATIVE</h2>
+      <p>
+        Un elemento con position: relative è posizionato RELATIVAMENTE alla
+        posizione che avrebbe normalmente assunto con position: static. Possiamo
+        spostare l'elemento da questa posizione iniziale tramite 4 proprietà di
+        "allineamento": top, bottom, left e right.
+      </p>
+      <div class="relative">
+        Questo div è posizionato con position: relative
+      </div>
+      <div>Questo div è posizionato con position: static</div>
+    </main>
+  </body>
+</html>
